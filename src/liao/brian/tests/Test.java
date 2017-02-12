@@ -4,8 +4,8 @@ import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.util.Random;
 
-import liao.brian.files.BitInputStream;
-import liao.brian.files.BitOutputStream;
+import uw.io.BitInputStream;
+import uw.io.BitOutputStream;
 
 public class Test implements Runnable {
 

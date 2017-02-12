@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.util.Scanner;
+import uw.io.BitInputStream;
+import uw.io.BitOutputStream;
 
 public class DataManipulatorText implements DataManipulator {
 
