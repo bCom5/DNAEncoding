@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.util.Random;
 
+import edu.princeton.cs.introcs.BinaryIn;
 import uw.io.BitInputStream;
 import uw.io.BitOutputStream;
 
@@ -11,13 +12,11 @@ public class Test implements Runnable {
 
 	public void run() {
 		try {
-			BitInputStream in = new BitInputStream("Video.mp4");
-			BitOutputStream out = new BitOutputStream(new PrintStream("VideoOut.mp4"), false);
-			int bit;
-			while ((bit = in.readBit()) != -1) {
-				out.writeBit(bit);
+			BinaryIn in = new BinaryIn("Hamlet.txt");
+			while (!in.isEmpty()) {
+				System.out.println(in.readInt(2));
 			}
-		} catch (FileNotFoundException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
